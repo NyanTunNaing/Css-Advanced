@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+body {
+    background-color: #f1f1f1;
+    font-family: 'Poppins', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+section {
+    width: 60%;
+    padding: 5rem;
+    margin: 4rem auto;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+h2 span {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    color: crimson;
+}
+
+.universal > code,
+.example > p {
+    padding: 10px;
+    background-color: aquamarine;
+}
+
+.box {
+    display: inline-block;
+    width: 80px;
+    aspect-ratio: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* universal  */
+
+.universal * {
+    background-color: red;
+}
+
+/* direct children */
+
+.direct-children > p {
+    color: firebrick;
+}
+
+/* adjacent sibling is really useful in declaring margin */
+
+.adjacent-sibling .box + .box {
+    background-color: red;
+    margin-left: 50px;
+}
+
+/* general sibling  */
+
+.general-sibling .box ~ .box {
+    background-color: red;
+    margin-left: 50px;
+}
+
+/* attribute */
+
+a[target] {
+    color: darkblue;
+}
+  
+a[href="about.html"] {
+    color: red;
+}
+  
+a[class|="another"] {
+    color: purple;
+}
+  
+a[href^="http"] {
+    color: orange;
+}
+  
+a[href*="google"] {
+    color: black;
+}
+  
+a[href$=".ca"] {
+    color: blue;
+}
