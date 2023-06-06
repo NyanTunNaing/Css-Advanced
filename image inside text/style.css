@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+*,
+*::before,
+*::after {
+    margin-top: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+h1 {
+    font-size: 4rem;
+    background-image: url(../images/liyue\ -\ genshin\ impact.jpg);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
