@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+h1 {
+  text-align: center;
+
+  margin-block: 2rem;
+  font-size: 2rem;
+  color: orangered;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+
+  width: 65%;
+  padding: 4rem;
+  margin-inline: auto;
+
+  background-color: #f4f4f4;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.btn {
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  transition: all 200ms ease;
+}
+
+.btn-1 {
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: white;
+  color: white;
+  background-color: orangered;
+}
+
+.btn-1:hover {
+  outline-offset: -0.3rem;
+}
+
+.btn-2,
+.btn-3 {
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: -2px;
+  color: black;
+}
+
+.btn-2 {
+  outline-color: skyblue;
+  border: 2px solid skyblue;
+}
+
+.btn-2:hover {
+  outline-offset: -0.3rem;
+}
+
+.btn-3,
+.btn-4 {
+  outline-style: solid;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.btn-3 {
+  outline-color: violet;
+  border: 2px solid violet;
+}
+
+.btn-3:hover {
+  outline-offset: 0.1rem;
+}
+
+.btn-4 {
+  outline-offset: -2px;
+  outline-color: orangered;
+  border: 2px solid orangered;
+}
+
+.btn-4:hover {
+  outline-width: 0.5rem;
+  outline-offset: -0.5rem;
+}
